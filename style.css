@@ -2,6 +2,10 @@ body {
 	width: 500px;
 	height: 400px;
 }
+a {
+	text-decoration: none;
+	color: black; 
+}
 .logo-image {
 	float: left;
 }
@@ -81,4 +85,46 @@ body {
 }
 .chat-message {
 	background: #96DBEA;
+}
+.homeworks-navigation {
+	list-style: none;
+}
+.homeworks-navigation li {
+	float: left; 
+	margin-left: 20px;
+	width: 20px;
+	height: 30px;
+	font-size: 15px;
+	text-align: center;
+	font-weight: bold;
+	cursor: pointer; 
+	padding-top: 5px;
+	background: #26B5D5;
+}
+.homework-block {
+	min-height: 120px;
+}
+.homework-block .meta-data {
+	min-height: 60px;
+	position: relative;
+	background: #96DBEA;
+	font-weight: bold;
+}
+.homework-block .meta-data .user-name {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+}
+.homework-block .meta-data .date-redacted {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+.homework-block .meta-data .lesson-title {
+	position: absolute;
+	top: 30px;
+	left: 5px;
+}
+.homework-block .homework-data {
+	min-height: 60px;
 }

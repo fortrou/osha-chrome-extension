@@ -56,12 +56,39 @@ function get_chatData(messages) {
 		}
 	});
 }
+function get_sentHomework(homeworks, page) {
+	$.ajax({
+		url : 'http://online-shkola.com.ua/api/index.php' ,
+		method : 'POST' ,
+		dataType : 'json' , 
+		data : {
+				 login	   : $("input[name=current-login]").val(),
+				 id 	   : $("input[name=current-id]").val(),
+				 homeworks : homeworks,
+				 page 	   : page,
+				 flag	   : '3'
+				} ,
+		success : function (data) {
+			if(homeworks == 1) {
+				$(".workspace-" + $("input[name = current-level]").val() + " .main-bar").empty().append(data['content']);
+				$(".workspace-" + $("input[name = current-level]").val() + " .main-bar").append(data['pages']);
+			}
+		}
+	});
+}
 $( document ).ready(function() {
 	$(".chat-ico").click(function(){
-		get_chatData(1)
-	})	
+		get_chatData(1);
+	})
+	$(".homeworks-ico").click(function(){
+		get_sentHomework(1, 1);
+	})
+	$(".homeworks-navigation li").click(function(){
+		var page = $(this).attr("data-page");
+		get_sentHomework(1, page);
+	})
 	$(".workspace").hide(10);
     $("input[name=authorization]").click(function(){
-    	authorization()
+    	authorization();
     })
 });
