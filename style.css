@@ -1,0 +1,84 @@
+body {
+	width: 500px;
+	height: 400px;
+}
+.logo-image {
+	float: left;
+}
+.extension-title {
+	float: left;
+	margin-top: 30px;
+	margin-left: 20px;
+	font-size: 22px;
+}
+.clear {
+	clear: both;
+}
+#main-window {
+	height: 100%;
+}
+.authorization-form {
+	width: 100%;
+	margin-top: 100px;
+	text-align: center;
+}
+.workspace {
+	height: 100%;
+}
+.sidebar {
+	height: 100%;
+	background: #26B5D5;
+	width: 65px;
+	float: left;
+}
+.main-bar {
+	float: left;
+	width: 409px;
+	height: 100%;
+	margin-left: 20px;
+	overflow-y: auto;
+}
+.avatar {
+	vertical-align: middle;
+	width: 55px;
+	height: 55px;
+	border: 2px solid #e58b1e;
+	overflow: hidden;
+	border-radius: 35px;
+	margin: 10px 2px;
+}
+.chat-message {
+	width: 100%;
+	min-height: 80px;
+}
+.chat-user-avatar {
+	width: 50px;
+	height: 50px;
+	margin: 5px;
+	border-radius: 35px;
+	float: left;
+}
+.message-data {
+	float: left;
+	position: relative;
+	width: 340px;   
+}
+.chat-user-name {
+	position: absolute;
+	font-weight: 700;
+	left: 5px;
+	top: 5px;
+}
+.chat-message-date {
+	position: absolute;
+	font-weight: 700;
+	right: 5px;
+	top: 5px;
+}
+.chat-message-text {
+	position: absolute;
+	top: 15px;
+}
+.chat-message {
+	background: #96DBEA;
+}
