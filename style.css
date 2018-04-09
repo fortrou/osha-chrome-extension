@@ -23,7 +23,7 @@ a {
 }
 .authorization-form {
 	width: 100%;
-	margin-top: 100px;
+	padding-top: 100px;
 	text-align: center;
 }
 .workspace {
@@ -54,6 +54,8 @@ a {
 .chat-message {
 	width: 100%;
 	min-height: 80px;
+	margin-bottom: 10px;
+    padding-bottom: 10px;
 }
 .chat-user-avatar {
 	width: 50px;
@@ -65,7 +67,8 @@ a {
 .message-data {
 	float: left;
 	position: relative;
-	width: 340px;   
+	width: 340px;
+	padding-top: 20px;
 }
 .chat-user-name {
 	position: absolute;
@@ -80,8 +83,7 @@ a {
 	top: 5px;
 }
 .chat-message-text {
-	position: absolute;
-	top: 15px;
+	
 }
 .chat-message {
 	background: #96DBEA;
@@ -109,6 +111,7 @@ a {
 	position: relative;
 	background: #96DBEA;
 	font-weight: bold;
+	padding-top: 30px
 }
 .homework-block .meta-data .user-name {
 	position: absolute;
@@ -121,10 +124,26 @@ a {
 	right: 5px;
 }
 .homework-block .meta-data .lesson-title {
-	position: absolute;
-	top: 30px;
-	left: 5px;
+	
 }
 .homework-block .homework-data {
 	min-height: 60px;
+}
+.change-profile {
+	border-radius: 10px;
+	background: #26B5D5;
+	padding: 7px 20px;
+	margin-left: 20px;
+	font-weight: bold;
+	font-size: 16px;
+	color: white;
+	border: none;
+	float: left;
+}
+#profile-change input {
+	background: rgba(5, 5, 220, .4);
+	border: none;
+	width: 100%;
+	height: 50px;
+	color: white;
 }
